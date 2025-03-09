@@ -30,4 +30,9 @@ class Item
     // /// 賞味期限
     // /// </summary>
     DateTime expirationDate;
+
+    public Item(string name)
+    {
+        this.name = name;
+    }
 }

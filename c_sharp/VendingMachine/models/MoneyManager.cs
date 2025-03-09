@@ -7,22 +7,25 @@ class MoneyManager
     int insertMoney;
 
     /// <summary>
-    /// お金が足りているかの確認
+    /// お金の限度額
     /// </summary>
-    /// <returns></returns>
-    public int MoneyChecker()
-    { }
+    int limitAmount;
 
     /// <summary>
     /// 金額などの計算
     /// </summary>
     /// <returns></returns>
-    public int MoneyCalculator()
-    { }
+    public int Calculate()
+    { 
+        return 0;
+    }
 
     /// <summary>
-    /// お金の限度額
+    /// お金が足りているかの確認
     /// </summary>
-    int limitAmount;
-
+    /// <returns>お釣り</returns>
+    public int PayBill()
+    {
+        return 0;
+    }
 }
