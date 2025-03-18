@@ -11,12 +11,18 @@ class MoneyManager
     /// </summary>
     int limitAmount;
 
+    // private void Debug()
+    // {
+    //     Console.WriteLine(limitAmount);
+    //     Console.WriteLine(insertMoney);
+    // }
+
     /// <summary>
     /// 金額などの計算
     /// </summary>
     /// <returns></returns>
     public int Calculate()
-    { 
+    {
         return 0;
     }
 

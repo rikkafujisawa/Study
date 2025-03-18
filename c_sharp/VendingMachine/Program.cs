@@ -1,4 +1,6 @@
-﻿namespace VendingMachine
+﻿using VendingMachine.models;
+
+namespace VendingMachine
 {
     class Program
     {
@@ -9,6 +11,19 @@
             Console.WriteLine("0:商品の投入(業者用) 1:商品の表示(お客さん用)");
             string? input = Console.ReadLine();
             //2.入力された値ごとに処理を行う
+            if (input == "0")
+            {
+                // 商品の投入処理を呼び出す
+                VendingMachine.ReceiveItems();
+            }
+            else if (input == "1")
+            {
+                // 商品の表示処理を呼び出す
+            }
+            else
+            {
+                Console.WriteLine("0または1を入力してください");
+            }
             //3.業者用：商品を受け取る。
             //4.お客さん用：
             // 商品を表示する。(在庫数)
