@@ -1,6 +1,6 @@
 namespace VendingMachine.models
 {
-    class VendingMachine
+    class VendingMachineLogic
     {
         /// <summary>
         /// 商品リスト
@@ -26,8 +26,10 @@ namespace VendingMachine.models
         /// <summary>
         /// 商品の受け取り
         /// </summary>
+        /// <param name="itemId">商品ID</param>
+        /// <param name="quantity">補充する量</param>
         /// <returns>補充された商品</returns>
-        public List<Item>? ReceiveItems()
+        public static List<Item>? ReceiveItems(int itemId, int quantity)
         {
             return null;
         }
